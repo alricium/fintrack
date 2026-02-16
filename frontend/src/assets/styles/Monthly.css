@@ -1,0 +1,108 @@
+.monthly-container {
+    padding: 30px;
+    color: var(--white);
+    min-height: 100vh;
+}
+  
+.monthly-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: var(--teal);
+}
+  
+.monthly-card {
+    background-color: var(--black);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    margin-bottom: 30px;
+}
+  
+.monthly-chart-wrapper {
+    width: 100%; 
+    max-width: 1000px;
+    height: 400px;
+    margin: 0 auto; 
+}
+
+.monthly-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+  
+.monthly-table thead {
+    background-color: var(--gray);
+}
+  
+.monthly-table th {
+    padding: 14px 12px;
+    text-align: left;
+    font-weight: 600;
+    color: var(--teal);
+    border-bottom: 2px solid var(--teal-hover);
+}
+  
+.monthly-table td {
+    padding: 12px;
+    border-bottom: 1px solid var(--teal-hover);
+    color: var(--white);
+}
+  
+.monthly-table tbody tr:hover {
+    background-color: var(--teal-hover);
+    transition: background 0.2s ease;
+}
+
+.net-positive {
+    color: var(--teal);
+    font-weight: 600;
+}
+  
+.net-negative {
+    color: var(--red);
+    font-weight: 600;
+}
+  
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+  
+.pagination button {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--teal);
+    color: var(--black);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+  
+.pagination button:disabled {
+    background-color: var(--gray);
+    cursor: not-allowed;
+}
+  
+.pagination span {
+    font-weight: 500;
+    color: var(--white);
+}
+  
+  
+@media (max-width: 768px) {
+    .monthly-chart-wrapper {
+      height: 300px;
+    }
+  
+    .monthly-table th,
+    .monthly-table td {
+      padding: 8px;
+      font-size: 13px;
+    }
+}  

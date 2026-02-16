@@ -1,0 +1,127 @@
+:root {
+    --black: #222831;
+    --gray: #393E46;
+    --teal: #00ADB5;
+    --teal-hover: #00cbd5d0;
+    --white: #eeeeee;
+    --red: #ef4444;
+    --red-hover: #dc2626;
+}
+  
+.dashboard-container {
+  padding: 20px;
+  min-height: 100vh;
+  color: var(--white);
+}
+
+.dashboard-card {
+  background-color: var(--black);
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+  
+.dashboard-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+  
+.dashboard-card h6 {
+  font-size: 0.85rem;
+  color: var(--white);
+  opacity: 0.7;
+  margin-bottom: 6px;
+}
+  
+.dashboard-card h4 {
+  font-weight: 600;
+  margin: 0;
+}
+  
+.income-card {
+  border-left: 5px solid var(--teal);
+}
+  
+.expense-card {
+  border-left: 5px solid var(--red);
+}
+  
+.profit-card {
+  border-left: 5px solid var(--teal-hover);
+}
+
+.date-card {
+  border-left: 5px solid var(--white);
+}
+
+.chart-card {
+  background-color: var(--black);
+  border-radius: 12px;
+  border: none;
+  color: var(--white);
+}
+  
+.chart-card h5 {
+  font-weight: 600;
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+.distribution-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+  
+.pie-area {
+  width: 50%;
+  height: 220px;
+}
+  
+.distribution-stats {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+  
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--gray);
+  padding: 12px;
+  border-radius: 10px;
+}
+  
+.stat-item p {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+  
+.stat-item h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.stat-item .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+  
+.stat-item.income .dot {
+  background-color: var(--teal);
+}
+  
+.stat-item.expense .dot {
+  background-color: var(--red);
+}
+
+.text-center {
+  color: var(--white);
+  opacity: 0.6;
+}
+  

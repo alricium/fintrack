@@ -1,0 +1,76 @@
+.annual-container {
+    padding: 30px;
+    color: var(--white);
+    min-height: 100vh;
+}
+
+.annual-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: var(--teal);
+}
+
+.annual-card {
+    background-color: var(--black);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.annual-chart-wrapper {
+    width: 100%;
+    height: 500px;
+}
+
+.annual-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.annual-table thead {
+    background-color: var(--gray);
+}
+
+.annual-table th {
+    padding: 14px 12px;
+    text-align: left;
+    font-weight: 600;
+    color: var(--teal);
+    border-bottom: 2px solid var(--teal-hover);
+}
+
+.annual-table td {
+    padding: 12px;
+    border-bottom: 1px solid var(--teal-hover);
+    color: var(--white);
+}
+
+.annual-table tbody tr:hover {
+    background-color: var(--teal-hover);
+    transition: background 0.2s ease;
+}
+
+.net-positive {
+    color: var(--teal);
+    font-weight: 600;
+}
+
+.net-negative {
+    color: var(--red);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .annual-chart-wrapper {
+        height: 350px;
+    }
+
+    .annual-table th,
+    .annual-table td {
+        padding: 8px;
+        font-size: 13px;
+    }
+}
